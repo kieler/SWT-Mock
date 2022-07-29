@@ -23,6 +23,14 @@
     <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
   </properties>
 
+  <!-- while deploying, put the compiled artifact into the following (local) repository -->
+  <distributionManagement>
+    <repository>
+     <id>internal-repo-for-downstream-usage</id>
+     <url>file://swt-mock</url>
+    </repository>
+  </distributionManagement>
+
   <build>
     <sourceDirectory>src</sourceDirectory>
   </build>
