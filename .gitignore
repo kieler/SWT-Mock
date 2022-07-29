@@ -1,0 +1,7 @@
+bin/
+target/
+.DS_Store
+*.class
+*.java._trace
+# local Maven artifact
+swt-mock/
