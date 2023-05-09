@@ -12,5 +12,9 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 package org.eclipse.swt.widgets;
-public class Shell {
+public class Shell extends Composite {
+
+    public Shell(Composite parent, int style) {
+        super(parent, style);
+    }
 }
