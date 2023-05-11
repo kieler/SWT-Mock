@@ -56,12 +56,11 @@ import org.eclipse.core.runtime.IStatus;
  * There are two ways for adding handlers to the handling flow. First using
  * extension point <code>org.eclipse.ui.statusHandlers</code>, second by the
  * workbench advisor and its method
- * {@link WorkbenchAdvisor#getWorkbenchErrorHandler()}. If a handler is
+ * WorkbenchAdvisor#getWorkbenchErrorHandler(). If a handler is
  * associated with a product, it is used instead of this defined in advisor.
  * </p>
  *
  * @since 3.3
- * @see AbstractStatusHandler
  */
 public class StatusManager {
 	/**
@@ -81,6 +80,8 @@ public class StatusManager {
 	 * done using a non modal {@link Dialog}.
 	 */
 	public static final int SHOW = 0x02;
+
+    public static final int BLOCK = 0x04;
 
 	private static volatile StatusManager MANAGER;
 
@@ -128,7 +129,6 @@ public class StatusManager {
 	 *
 	 * @param coreException a CoreException to be handled.
 	 * @param pluginId      the unique identifier of the relevant plug-in
-	 * @see StatusManager#handle(IStatus)
 	 * @since 3.4
 	 *
 	 */
