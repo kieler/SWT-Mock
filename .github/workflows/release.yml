@@ -1,0 +1,10 @@
+name: Release
+on: 
+  workflow_dispatch: # manual triggering, for debugging/testing
+  release: # Or when a release is published
+    types: [published]
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
