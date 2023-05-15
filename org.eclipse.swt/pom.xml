@@ -10,4 +10,9 @@
 
   <artifactId>org.eclipse.swt</artifactId>
 
+  <!-- Further required information for publishing on OSSRH -->
+  <name>Mock for Standard Widget Toolkit</name>
+  <description>Leightweight mock code of org.eclipse.swt with parts of their API, but no implementation or platform dependence.</description>
+  <url>https://github.com/kieler/SWT-Mock/</url>
+
 </project>

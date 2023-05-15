@@ -9,6 +9,11 @@
   </parent>
 
   <artifactId>org.eclipse.jface</artifactId>
+
+  <!-- Further required information for publishing on OSSRH -->
+  <name>Mock for Jface</name>
+  <description>Leightweight mock code of org.eclipse.jface with parts of their API, but no implementation or platform dependence.</description>
+  <url>https://github.com/kieler/SWT-Mock/</url>
   
   <dependencies>
     <dependency>
