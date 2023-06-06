@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>de.cau.cs.kieler.swt.mock</groupId>
   <artifactId>parent</artifactId>
-  <version>0.1.0-SNAPSHOT</version>
+  <version>0.1.0</version>
   <packaging>pom</packaging>
 
   <modules>
@@ -30,8 +30,8 @@
 
   <licenses>
     <license>
-      <name>Eclipse Public License - v 2.0</name>
-      <url>http://www.eclipse.org/legal/epl-v20.html</url>
+      <name>EPL-2.0</name>
+      <url>https://www.eclipse.org/legal/epl-2.0/</url>
     </license>
   </licenses>
 
@@ -51,14 +51,14 @@
   </scm>
 
   <!-- while deploying, put the compiled artifact into the following (local) repository -->
-  <distributionManagement>
+  <!-- <distributionManagement>
     <repository>
      <id>internal-repo-for-downstream-usage</id>
      <url>file://swt-mock</url>
     </repository>
-  </distributionManagement>
-  <!-- TODO: replace above with this for deploying to OSSRH -->
-  <!-- <distributionManagement>
+  </distributionManagement> -->
+  <!-- While releasing or building snapshots, deploy them to OSSRH -->
+  <distributionManagement>
     <snapshotRepository>
       <id>ossrh</id>
       <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
@@ -67,7 +67,7 @@
       <id>ossrh</id>
       <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
     </repository>
-  </distributionManagement> -->
+  </distributionManagement>
 
 
 
@@ -102,11 +102,8 @@
                 <goals>
                   <goal>sign</goal>
                 </goals>
-                <!-- TODO: This is the ID of a KIELER test GPG key. Remove this or replace it with the real KIELER key ID. -->
                 <configuration>
-                  <keyname>0x22B04AC3</keyname>
-                  <!-- TODO: is this needed? Does not seem to. -->
-                  <!-- <passphraseServerId>0x22B04AC3</passphraseServerId> -->
+                  <keyname>0x22228C2E</keyname>
                 </configuration>
               </execution>
             </executions>
