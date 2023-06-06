@@ -25,9 +25,7 @@ import org.eclipse.ui.IActionBars;
  * should instead subclass <code>Page</code>.
  * </p>
  *
- * @see PageBookView
- * @see Page
- * @noimplement This interface is not intended to be implemented by clients.
+ * This interface is not intended to be implemented by clients.
  */
 public interface IPage {
 	/**

@@ -5,10 +5,15 @@
   <parent>
     <groupId>de.cau.cs.kieler.swt.mock</groupId>
     <artifactId>parent</artifactId>
-    <version>0.1.0-SNAPSHOT</version>
+    <version>0.1.0</version>
   </parent>
 
   <artifactId>org.eclipse.jface</artifactId>
+
+  <!-- Further required information for publishing on OSSRH -->
+  <name>Mock for Jface</name>
+  <description>Leightweight mock code of org.eclipse.jface with parts of their API, but no implementation or platform dependence.</description>
+  <url>https://github.com/kieler/SWT-Mock/</url>
   
   <dependencies>
     <dependency>

@@ -93,7 +93,6 @@ import org.eclipse.swt.widgets.Composite;
  * are managed by the platform's adapter manager.
  * </p>
  *
- * @see IViewPart
  * @see IEditorPart
  */
 public interface IWorkbenchPart extends IAdaptable {
