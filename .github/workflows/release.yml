@@ -1,8 +1,9 @@
 name: Release
 on: 
   workflow_dispatch: # manual triggering, for debugging/testing
-  release: # Or when a release is published
-    types: [published]
+  # No automatic release for the first release, this has been done manually.
+  # release: # Or when a release is published
+  #   types: [published]
 jobs:
   release:
     runs-on: ubuntu-latest
